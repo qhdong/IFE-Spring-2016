@@ -135,7 +135,7 @@
             <tfoot>
             <tr>
                 <td>总计</td>
-                <td>100000</td>
+                <td colspan="2">100000</td>
             </tr>
             </tfoot>
         </table>
@@ -150,11 +150,11 @@
             <header>
                 <h2>注册窗口标题</h2>
             </header>
-            <form action="#" method="post">
+            <form action="#" method="get">
                 <fieldset>
                     <legend>邮箱</legend>
                     <label for="email">请输入邮箱地址:</label>
-                    <input type="email" id="email" required placeholder="这是一个文本输入框">
+                    <input type="email" id="email" name="email" required placeholder="这是一个文本输入框">
                     <p>邮箱地址请按要求格式输入</p>
                 </fieldset>
                 <fieldset>
@@ -169,7 +169,7 @@
                     <legend>个人信息</legend>
                     <label>性别:</label>
                     <label for="male">男</label>
-                    <input type="radio" name="gender" value="male" id="male">
+                    <input type="radio" name="gender" value="male" id="male" checked>
                     <label for="female">女</label>
                     <input type="radio" name="gender" value="female" id="female">
                     <label for="city">城市:</label>

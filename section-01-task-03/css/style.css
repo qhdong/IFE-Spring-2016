@@ -1,0 +1,42 @@
+#main {
+    max-width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: red;
+    border: 1px solid green;
+}
+
+.simple {
+    width: 500px;
+    background-color: blue;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.fancy {
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    margin: 20px auto;
+    border: 20px solid gray;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background-color: greenyellow;
+    right: -40px;
+    bottom: 40px;
+}
+
