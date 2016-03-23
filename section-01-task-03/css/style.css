@@ -1,42 +1,63 @@
-#main {
-    max-width: 500px;
-    height: 500px;
-    margin: 0 auto;
-    background-color: red;
-    border: 1px solid green;
-}
+@charset "UTF-8";
 
-.simple {
-    width: 500px;
-    background-color: blue;
-    margin: 0 auto;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
-
-.fancy {
-    width: 500px;
-    height: 500px;
-    background-color: green;
-    margin: 20px auto;
-    border: 20px solid gray;
+.container {
+    background-color: #eee;
+    min-width: 500px;
     padding: 20px;
+    border: 1px solid #999;
+}
+
+.box {
+    background-color: #fff;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #999;
+}
+
+.left {
+    float: left;
+    width: 200px;
     position: relative;
 }
 
-.child {
-    position: absolute;
-    width: 200px;
-    height: 300px;
-    background-color: greenyellow;
-    right: -40px;
-    bottom: 40px;
+.right {
+    float: right;
+    width: 120px;
 }
 
+.center {
+    margin-left: 220px;
+    margin-right: 140px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #999;
+    background-color: #eee;
+    margin: 10px 0;
+}
+
+.teamname {
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.clearfix {
+    /* IE6 不支持:after伪类, 兼容性做法 */
+    *zoom: 1;
+}
+
+.clearfix::before, .clearfix::after {
+    display: table;
+    line-height: 0;
+    content: '';
+}
+
+.clearfix::after {
+    clear: both;
+}
