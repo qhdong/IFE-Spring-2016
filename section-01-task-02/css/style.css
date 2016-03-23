@@ -160,13 +160,6 @@ tfoot td {
 }
 
 /* form */
-form input:focus, textarea:focus {
-    background: #fff;
-    border: 1px solid #f3bf00;
-    box-shadow: 0 0 3px #aaa;
-    -webkit-box-shadow: 0 0 3px #aaa;
-}
-
 form ul {
     list-style-type: none;
     list-style-position: outside;
@@ -176,7 +169,7 @@ form ul {
 
 form li {
     padding: 12px;
-    border-bottom: 1px solid #eee;
+    /*border-bottom: 1px solid #eee;*/
 }
 
 .form-title {
@@ -188,8 +181,14 @@ form li {
 
 }
 
+.field {
+    display: inline-block;
+}
+
 .form-hint {
-    padding-left: 20px;
+    font-size: 0.8em;
+    margin: 10px 0 0 0;
+    color: #999;
 }
 
 #submit {
@@ -205,3 +204,19 @@ form li {
 textarea {
     width: 50%;
 }
+
+.clearfix {
+    /* IE6 不支持:after伪类, 兼容性做法 */
+    *zoom: 1;
+}
+
+.clearfix::before, .clearfix::after {
+    display: table;
+    line-height: 0;
+    content: '';
+}
+
+.clearfix::after {
+    clear: both;
+}
+

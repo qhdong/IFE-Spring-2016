@@ -156,8 +156,10 @@
             <ul>
                 <li>
                     <label for="email" class="form-title">邮箱</label>
-                    <input type="email" id="email" placeholder="xxx@xxx.xxx" required>
-                    <span class="form-hint">请输入合法的邮箱地址</span>
+                    <div class="field">
+                        <input type="email" id="email" placeholder="xxx@xxx.xxx" required>
+                        <p class="form-hint">请输入合法的邮箱地址</p>
+                    </div>
                 </li>
                 <li>
                     <label for="password" class="form-title">密码</label>
@@ -165,8 +167,10 @@
                 </li>
                 <li>
                     <label for="password2" class="form-title">密码</label>
-                    <input type="password" id="password2" pattern="[a-zA-Z0-9]{6,16}" placeholder="6-16位字母数字" required>
-                    <span class="form-hint">密码为6-16位英文数字</span>
+                    <div class="field">
+                        <input type="password" id="password2" pattern="[a-zA-Z0-9]{6,16}" placeholder="6-16位字母数字" required>
+                        <p class="form-hint">密码为6-16位英文数字</p>
+                    </div>
                 </li>
                 <li>
                     <label class="form-title">性别</label>
