@@ -1,0 +1,28 @@
+.square {
+    width: 400px;
+    height: 200px;
+    background-color: #ccc;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -200px;
+}
+
+.fan {
+    border-radius: 50%;
+    background-color: #fc0;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+#fan-1 {
+    top: -50px;
+    left: -50px;
+}
+
+#fan-2 {
+    bottom: -50px;
+    right: -50px;
+}
