@@ -1,0 +1,240 @@
+/* reset */
+body, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* global */
+body {
+    margin: 0;
+    background-color: #eee;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+    height: 80px;
+    line-height: 80px;
+}
+
+/* header */
+.header {
+    background-color: #f3bf00;
+    height: 80px;
+    min-width: 1000px;
+}
+
+/* navbar */
+.navbar {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: #eee;
+}
+
+.navbar .logo > img {
+    height: 50px;
+    position: absolute;
+    top: 15px;
+}
+
+.nav-links {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.nav-links li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+/* article */
+
+article, aside {
+    width: 80%;
+    padding: 30px;
+    margin: 30px auto;
+    border: thin solid #cbcbcb;
+    background-color: white;
+    border-right-style: ridge;
+    border-bottom-style: ridge;
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+article h1 {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+article h2 {
+    font-size: 1.2em;
+    color: #777;
+}
+
+article .author, article .date {
+    font-size: 0.9em;
+    color: #777;
+}
+
+article p {
+    text-indent: 2em;
+    line-height: 1.5em;;
+}
+
+article ul {
+    list-style: none;
+}
+
+article ul li {
+    margin-top: 10px;
+}
+
+article ol li {
+    margin-top: 10px;
+}
+
+/* pictures */
+.img {
+    max-width: 100%;
+}
+
+.pictures figure {
+    border: 1px solid #ccc;
+    max-width: 150px;
+    padding: 10px;
+    float: left;
+    margin: 10px;
+}
+
+.pictures figure figcaption {
+    text-align: center;
+    margin: 0 10px 10px 10px;
+}
+
+/* table */
+table {
+    border-width: 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table a {
+    text-decoration: none;
+}
+
+td, th {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+}
+
+tfoot td {
+    background: #ccc;
+    color: #000;
+    font-weight: bold;
+}
+
+.main {
+    margin-right: 380px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* sidebar */
+.sidebar {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: right;
+    width: 380px;
+    margin-right: 20px;
+}
+
+.sidebar header h2 {
+    border-left: 3px solid #ccc;
+    padding: 0.6em;
+}
+
+/* form */
+form ul {
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0;
+    padding: 0;
+}
+
+form li {
+    padding: 12px;
+    /*border-bottom: 1px solid #eee;*/
+}
+
+.form-title {
+    display: inline-block;
+    float: left;
+    width: 20%;
+    padding-right: 20px;
+    text-align: right;
+
+}
+
+.field {
+    display: inline-block;
+}
+
+.form-hint {
+    font-size: 0.8em;
+    margin: 10px 0 0 0;
+    color: #999;
+}
+
+#submit {
+    background: #f3bf00;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 2em;
+    width: 100%;
+    border: 0;
+    outline: none;
+}
+
+textarea {
+    width: 50%;
+}
+
+.clearfix {
+    /* IE6 不支持:after伪类, 兼容性做法 */
+    *zoom: 1;
+}
+
+.clearfix::before, .clearfix::after {
+    display: table;
+    line-height: 0;
+    content: '';
+}
+
+.clearfix::after {
+    clear: both;
+}
+
