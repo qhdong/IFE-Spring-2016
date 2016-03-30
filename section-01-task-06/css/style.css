@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+/* css reset */
+html, body, div, span, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: gray;
+}
+
+.main {
+    background-color: #fff;
+    width: 980px;
+    height: 1386px;
+    position: relative;
+    margin: 20px auto;
+    padding: 0 44px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.page-header {
+    width: 892px;
+    border-bottom: 2px solid #938e8c;
+    position: relative;
+}
+
+.logo {
+    width: 110px;
+    height: 61px;
+    background: #d45d5c;
+    float: left;
+    position: relative;
+}
+
+.logo span {
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: STHeiti;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.date {
+    float: right;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 1.2rem;
+    font-family: STHeiti;
+    color: #d45d5c;
+
+}
+
+#article-1 {
+    margin-top: 40px;
+}
+
+#article-1 .left {
+    position: relative;
+    width: 641px;
+    float: left;
+}
+
+/* banner */
+
+#article-1 .banner {
+    width: 641px;
+    height: 301px;
+    position: relative;
+}
+
+#article-1 .left-mask {
+    position: absolute;
+    width: 191px;
+    height: 301px;
+    top: 0;
+    left: 0;
+    background: #398041;
+    opacity: 0.3;
+}
+
+#article-1 .left .content {
+    position: relative;
+}
+
+#article-1 .left .content .words {
+    float: left;
+    margin: 20px;
+    width: 27%;
+}
+
+#article-1 .left .content .words-content {
+    color: #231815;
+    opacity: 0.7;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+#what {
+    font-size: 1.6rem;
+    color: green;
+    text-decoration: underline;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+#when {
+    font-size: 1.6rem;
+    color: #d2994f;
+    text-decoration: underline;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+#how {
+    font-size: 1.6rem;
+    color: #cc7680;
+    text-decoration: underline;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.pink {
+    color: #cd4a8a;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+/* ariticle-1 right */
+
+#article-1 .right-mask {
+    position: absolute;
+    width: 191px;
+    height: 301px;
+    top: 0;
+    right: 0;
+    background: #ff71a5;
+    opacity: 0.3;
+}
+
+#article-1 .right {
+    position: relative;
+    width: 203px;
+    float: right;
+    border-top: 2px solid #cc8091;
+    margin-right: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#article-1 .right .title {
+    font-size: 1.8rem;
+    text-decoration: underline;
+    font-family: "LiHei Pro";
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+#article-1 .right .title span {
+    font-family: "LiHei Pro";
+    font-size: 2.4rem;
+}
+
+#article-1 .right .content {
+    font-size: 1.2rem;
+    color: #676767;
+    font-family: monospace;
+}
+
+#num700 {
+    font-size: 10rem;
+    color: #75b86b;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: "LiHei Pro";
+    margin: 20px 0 20px 0;
+}
+
+#article-1 .numbers {
+    color: #cc8091;
+    position: relative;
+}
+
+#num32 {
+    font-size: 5.2rem;
+}
+
+#css {
+    position: absolute;
+    font-size: 2.5rem;
+    bottom: 40%;
+    left: 40%;
+}
+
+#css-content {
+    font-size: 1.2rem;
+    left: 40%;
+    bottom: 20%;
+    position: absolute;
+    color: gray;
+
+}
+
+/* article 2 */
+
+#article-2 {
+    position: relative;
+}
+
+#article-2 .left {
+    width: 415px;
+    float: left;
+
+}
+
+#article-2 .right {
+    width: 458px;
+    float: right;
+}
+
+#article-2 .pic {
+    width: 458px;
+    height: 275px;
+    position: relative;
+}
+
+#article-2 .cover {
+    position: absolute;
+    width: 458px;
+    height: 61px;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.2;
+}
+
+#article-2 .cover .big {
+    font-size: 2.2rem;
+    color: #fff;
+    border-left: 3px #72b16a;
+}
+
+#article-2 .cover p {
+    margin: 5px 40px;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #72b16a;
+}
+
+.clearfix {
+    /* IE6 不支持:after伪类, 兼容性做法 */
+    *zoom: 1;
+}
+
+.clearfix::before, .clearfix::after {
+    display: table;
+    line-height: 0;
+    content: '';
+}
+
+.clearfix::after {
+    clear: both;
+}
