@@ -5,6 +5,6 @@
     var $output = document.getElementById('aqi-display');
     // 添加事件绑定函数,使用addEventListener,优于.onclick
     $button.addEventListener('click', function (e) {
-        $output.innerHTML = $input.value || '尚未录入';
+        $output.innerHTML = $input.value || '尚无录入';
     });
 }());
