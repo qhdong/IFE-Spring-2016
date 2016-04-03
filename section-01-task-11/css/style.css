@@ -1,0 +1,185 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+/**
+ * font
+ */
+/**
+ * 导航栏参数
+ */
+html {
+  font-size: 62.5%;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; }
+
+.container {
+  width: 100%;
+  background-color: #e8e8e8; }
+
+.header {
+  position: relative;
+  height: 5rem;
+  line-height: 5rem;
+  background-color: #91D4DA;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #ffffff; }
+  .header .back {
+    position: absolute;
+    left: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.6rem; }
+    .header .back img {
+      height: 1.6rem;
+      vertical-align: sub; }
+  .header h1 {
+    font-size: 2rem; }
+
+.nav {
+  background-color: #ffffff; }
+  .nav ul {
+    display: flex;
+    height: 5rem;
+    list-style: none; }
+    .nav ul .nav-item {
+      flex-grow: 1;
+      text-align: center;
+      line-height: 5rem;
+      font-size: 1.6rem;
+      cursor: pointer; }
+      .nav ul .nav-item.active {
+        border-bottom: 0.4rem solid #91D4DA; }
+
+.banner {
+  margin: 0; }
+  .banner img {
+    width: 100%; }
+
+.index {
+  background-color: #ffffff; }
+
+.label {
+  position: relative;
+  display: flex;
+  height: 10rem; }
+  .label .label-item {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem; }
+    .label .label-item img {
+      height: 4rem;
+      margin-bottom: 0.5rem; }
+  .label::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 3%;
+    display: block;
+    width: 94%;
+    height: 1px;
+    background-color: #e8e8e8; }
+
+.col {
+  height: 15rem; }
+  .col .col-ul {
+    height: 12rem;
+    width: 94%;
+    margin: 0.5rem auto 0 auto;
+    display: flex;
+    justify-content: center; }
+    .col .col-ul .col-ul-item {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      .col .col-ul .col-ul-item img {
+        height: 8rem;
+        margin: 0 auto; }
+      .col .col-ul .col-ul-item:not(:last-child) {
+        border-right: 1px solid #e8e8e8; }
+      .col .col-ul .col-ul-item .col-ul-item-h3 {
+        font-size: 2rem; }
+      .col .col-ul .col-ul-item .col-ul-item-h4 {
+        font-size: 1.6rem;
+        color: #717171; }
+
+.mod {
+  background-color: #ffffff;
+  margin-top: 1rem;
+  padding: 1rem; }
+  .mod .mod-title {
+    line-height: 3.5rem;
+    font-size: 2rem;
+    color: #717171;
+    border-bottom: 1px solid #e8e8e8; }
+  .mod .mod-item {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between; }
+    .mod .mod-item .mod-item-img {
+      width: 8rem;
+      height: 8rem;
+      flex-shrink: 0; }
+    .mod .mod-item .mod-item-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .mod .mod-item .mod-item-column .item {
+        display: block;
+        font-size: 1.6rem;
+        line-height: 3.5rem;
+        width: 90%;
+        text-align: center;
+        background-color: #e8e8e8; }
+      .mod .mod-item .mod-item-column:not(:first-child) {
+        margin-left: 2rem; }
+
+.article {
+  margin-top: 1rem;
+  background-color: #ffffff; }
+  .article .article-item-col {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+    border-bottom: 1px solid #e8e8e8; }
+  .article .image {
+    width: 10rem;
+    height: 8rem; }
+  .article .content {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .article .content .title {
+      font-size: 1.6rem;
+      line-height: 2rem; }
+    .article .content .time {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #717171; }
+  .article .article-item-col-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem; }
+    .article .article-item-col-col .imgsBox {
+      display: flex;
+      justify-content: space-between; }
+      .article .article-item-col-col .imgsBox .imgBox {
+        width: 10rem;
+        height: 8rem; }
+    .article .article-item-col-col .title {
+      margin-bottom: 1rem;
+      font-size: 1.6rem; }
+    .article .article-item-col-col .time {
+      font-size: 1.6rem;
+      color: #717171; }
+
+/*# sourceMappingURL=style.css.map */
