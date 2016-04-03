@@ -79,6 +79,10 @@ input:focus {
     height: 100%;
     margin: 0;
     padding: 0;
+    -webkit-transition: left 0.5s;
+    -moz-transition: left 0.5s;
+    -ms-transition: left 0.5s;
+    -o-transition: left 0.5s;
     transition: left 0.5s;
 }
 
@@ -94,6 +98,8 @@ input:focus {
 }
 
 #scroll:target ~ .banner > .slide {
+    -webkit-animation: 6s banner infinite;
+    -o-animation: 6s banner infinite;
     animation: 6s banner infinite;
 
 }
