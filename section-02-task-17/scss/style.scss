@@ -1,0 +1,24 @@
+.aqi-chart-wrap {
+  display: flex;
+  position: relative;
+  width: 90%;
+  height: 600px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 10px auto;
+  background-color: #ffffff;
+}
+
+.day {
+  width: 30px;
+}
+
+.week {
+  width: 100px;
+}
+
+.month {
+  width: 300px;
+}
+
