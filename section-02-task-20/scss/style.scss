@@ -1,0 +1,51 @@
+strong {
+  color: red;
+}
+
+.yellow {
+  color: yellow !important;
+
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.control {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.control button {
+  margin: 0 5px;
+}
+
+.messageBox {
+  text-align: center;
+}
+
+.view {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90%;
+  background: #ffffff;
+  margin: 10px auto;
+  div {
+    color: #ffffff;
+    height: 40px;
+    padding: 5px;
+    margin: 10px;
+    background-color: red;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+
+  }
+}

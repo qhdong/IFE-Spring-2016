@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>IFE-2016-Spring-Task20</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+</head>
+<body>
+    <div class="container">
+        <section class="messageBox">
+            <p id="message">通知区域</p>
+        </section>
+        <section class="control">
+            <textarea name="inputElement" id="inputElement" cols="30" rows="2" placeholder="允许一次批量输入多个内容，格式可以为数字、中文、英文等，可以通过用回车，逗号（全角半角均可），顿号，空格（全角半角、Tab等均可）等符号作为不同内容的间隔"></textarea>
+            <button id="leftInBtn">左侧入</button>
+            <button id="rightInBtn">右侧入</button>
+            <button id="leftOutBtn">左侧出</button>
+            <button id="rightOutBtn">右侧出</button>
+            <input id="queryText" type="text" placeholder="输入查询关键词,支持模糊查询">
+            <button id="queryBtn">查询</button>
+        </section>
+        <section class="view"></section>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
