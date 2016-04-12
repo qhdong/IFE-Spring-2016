@@ -1,0 +1,47 @@
+@charset "UTF-8";
+.tags {
+  margin: 10px; }
+
+.hobbys {
+  margin: 10px; }
+
+.tagView {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: flex-start; }
+  .tagView div {
+    background-color: #78BCFB;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer; }
+    .tagView div:hover {
+      background-color: red; }
+    .tagView div:hover::before {
+      content: '删除 '; }
+    .tagView div:hover::after {
+      content: ' !'; }
+
+.hobbyView {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+  .hobbyView div {
+    background-color: orange;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

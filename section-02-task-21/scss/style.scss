@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.tags {
+  margin: 10px;
+}
+
+.hobbys {
+  margin: 10px;
+}
+
+.tagView {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: flex-start;
+  div {
+    background-color: #78BCFB;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: red;
+    }
+    &:hover::before {
+      content: '删除 ';
+    }
+    &:hover::after {
+      content: ' !';
+    }
+  }
+}
+
+.hobbyView {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  div {
+    background-color: orange;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+  }
+}
