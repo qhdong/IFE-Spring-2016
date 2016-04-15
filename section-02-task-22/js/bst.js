@@ -84,6 +84,26 @@ BinarySearchTree.prototype = {
         }
     },
 
+    traverseBF: function () {
+        "use strict";
+
+        var queue = [],
+            res = [],
+            current = this.root;
+        while (current) {
+            if (current.left) {
+                queue.push(current.left);
+            }
+            if (current.right) {
+                queue.push(current.right);
+            }
+
+            res.push(current.value);
+            current = queue.shift();
+        }
+        return res;
+    },
+
     inOrder: function () {
         "use strict";
 

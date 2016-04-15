@@ -2,7 +2,6 @@
     "use strict";
 
     function renderTree(node, tree) {
-
         if (tree) {
             var $root = document.createElement('div');
             // $root.appendChild(document.createTextNode(tree.value));
@@ -30,6 +29,13 @@
         }, interval);
     }
 
+    function changeBtnState(state) {
+        var $buttons = document.querySelectorAll('button');
+        Array.prototype.forEach.call($buttons, function (btn) {
+            btn.disabled = !state;
+        });
+    }
+
     function travelAnimate(tree, type) {
         var traversal;
         switch (type) {
@@ -42,17 +48,28 @@
             case 'postOrder':
                 traversal = tree.postOrder();
                 break;
+            case 'bf':
+                traversal = tree.traverseBF();
+                break;
             default:
                 traversal = tree.inOrder();
                 break;
         }
 
         console.log(traversal);
+        scheduler.delay(function () {
+            changeBtnState(false);
+        }, 0);
+
         traversal.forEach(function (value) {
             var $node = $('#node-' + value);
             animate($node);
             animate($node);
         });
+        
+        scheduler.delay(function () {
+            changeBtnState(true);
+        }, 0);
     }
 
     function initBtns() {
@@ -64,6 +81,15 @@
         });
         $.addEvent($('#inOrderBtn'), 'click', function () {
             travelAnimate(bst, 'inOrder');
+        });
+        $.addEvent($('#bfBtn'), 'click', function () {
+            travelAnimate(bst, 'bf');
+        });
+
+        $.addEvent($('#randomBtn'), 'click', function () {
+            bst = randomBST();
+            $('.tree').innerHTML = '';
+            renderTree($('.tree'), bst.root);
         });
     }
 

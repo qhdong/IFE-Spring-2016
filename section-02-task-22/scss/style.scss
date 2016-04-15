@@ -9,7 +9,7 @@
 
 .tree {
   width: 90%;
-  height: 400px;
+  height: 300px;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -26,9 +26,15 @@
     text-align: center;
     padding: 10px;
     margin: 10px;
+    background-color: #ffffff;
+    -webkit-transition: background-color 200ms;
+    -moz-transition: background-color 200ms;
+    -ms-transition: background-color 200ms;
+    -o-transition: background-color 200ms;
+    transition: background-color 200ms;
   }
 }
 
 .highlight {
-  background: greenyellow;
+  background: #ff3a78 !important;
 }
