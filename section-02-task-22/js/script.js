@@ -93,7 +93,7 @@
         });
     }
 
-    // var bst = new BinarySearchTree();
+    // var bst = new Tree();
     var bst = randomBST();
 
     function init() {
