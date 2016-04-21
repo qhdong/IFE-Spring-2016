@@ -32,24 +32,24 @@ Tree.prototype = {
             throw new Error('Cannot add node to a non-existent parent.');
         }
     },
-    
+
     remove: function (data, fromData, traversal) {
         "use strict";
         var parent = null,
             childToRemove = null,
             index;
-        
+
         var callback = function (node) {
             if (node.data === fromData) {
                 parent = node;
             }
         };
-        
+
         this.contains(callback, traversal);
-        
+
         function findIndex(arr, data) {
             var index;
-            
+
             arr.forEach(function (node, idx) {
                 if (node.data === data) {
                     index = idx;
@@ -58,7 +58,7 @@ Tree.prototype = {
 
             return index;
         }
-        
+
         if (parent) {
             index = findIndex(parent.children, data);
             if (index === undefined) {
@@ -71,7 +71,7 @@ Tree.prototype = {
         }
 
         return childToRemove;
-        
+
     },
 
     traverseDF: function (callback, order) {

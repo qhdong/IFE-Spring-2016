@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.highlight {
+  color: #cd4a8a;
+}
+
+.tree {
+  
+}
+
+.controlBtn {
+  margin-left: 1em;
+  i {
+    padding: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+}
+
+.controlBtn {
+  display: none;
+}
+
+.data {
+  cursor: pointer;
+}
+
+.data:hover {
+  color: #9ed1fe;
+  text-decoration: underline;
+}
+
+.node > div:hover > .controlBtn {
+  display: inline-block !important;
+}
+
+.hide {
+  display: none !important;
+}

@@ -105,7 +105,7 @@
             animate($node);
             animate($node);
         });
-        
+
         scheduler.delay(function () {
             changeBtnState(true);
         }, 0);
