@@ -14,13 +14,6 @@
             success: '格式正确',
             fail: '长度为4~16个字符'
         }),
-        emailField = FormFieldFactory.makeField({
-            type: 'email',
-            label: '邮箱',
-            rules: '必填，请输入合法邮箱地址',
-            success: '格式正确',
-            fail: '请输入合法邮箱地址'
-        }),
         passwdField = FormFieldFactory.makeField({
             type: 'password',
             label: '密码',
@@ -42,6 +35,13 @@
             success: '格式正确',
             fail: '两次输入密码必须相同',
             strategy: passwordConfirmFieldStrategy
+        }),
+        emailField = FormFieldFactory.makeField({
+            type: 'email',
+            label: '邮箱',
+            rules: '必填，请输入合法邮箱地址',
+            success: '格式正确',
+            fail: '请输入合法邮箱地址'
         }),
         phoneField = FormFieldFactory.makeField({
             type: 'phone',

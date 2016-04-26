@@ -38,7 +38,6 @@ var FormFieldFactory = {
                 break;
             case this.availableTypes.EMAIL:
                 field = new FormField('email', options.strategy || emailFieldStrategy);
-                this.fields.push(field);
                 break;
             case this.availableTypes.PASSWORD:
                 field = new FormField('password', options.strategy || passwordFieldStrategy);
@@ -65,14 +64,18 @@ var FormFieldFactory = {
             console.log(formFields);
             field.strategy = {
                 isValid: function () {
+                    var success = true;
                     formFields.forEach(function (item) {
                         if (!item.isValid()) {
                             var fieldName = item.getElement().parentNode.querySelector('label').textContent;
+                            success = false;
                             alert(fieldName + ' 验证失败!');
                         }
                         return false;
                     });
-                    alert('验证成功!');
+                    if (success) {
+                        alert('验证成功!');
+                    }
                     return true;
                 }
             };
