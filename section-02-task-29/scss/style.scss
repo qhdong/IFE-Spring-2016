@@ -1,0 +1,100 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$btnWidth: 70px;
+$fieldHeight: 40px;
+$fontSize: 20px;
+$primaryColor: #2c9bcc;
+$borderColor: #ccc;
+$borderRadius: 5px;
+$inputWidth: 300px;
+$labelWidth: 100px;
+$margin: 20px;
+
+form {
+  position: relative;
+
+  width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+
+  border: 1px solid $borderColor;
+  border-radius: $borderRadius;
+
+  .field {
+    margin-top: $margin;
+
+    label {
+      display: inline-block;
+      width: $labelWidth;
+      margin-right: $margin;
+
+      color: #000;
+      font-size: $fontSize;
+      font-weight: bold;
+      text-align: right;
+
+    }
+    input {
+      width: $inputWidth;
+      height: $fieldHeight;
+      margin-right: $margin;
+      border-radius: $borderRadius;
+      border: 1px solid $borderColor;
+
+      font-size: $fontSize;
+    }
+    button {
+      display: inline-block;
+    }
+    .tip {
+      margin-left: $labelWidth + $margin;
+      margin-top: 5px;
+      font-size: 14px;
+      color: #cbcbcb;
+    }
+  }
+
+}
+
+.btn {
+  display: inline-block;
+
+  width: $btnWidth;
+  height: $fieldHeight;
+  border: none;
+  border-radius: $borderRadius;
+  background-color: $primaryColor;
+  color: #ffffff;
+
+  font-size: $fontSize;
+  font-weight: bold;
+  line-height: $fieldHeight;
+  text-align: center;
+  cursor: pointer;
+}
+
+.error-input {
+  border-color: red !important;
+}
+
+.error {
+  color: red !important;
+  font-weight: bold;
+}
+
+.success-input {
+  border-color: green !important;
+}
+
+.success {
+  color: green !important;
+  font-weight: bold;
+}
