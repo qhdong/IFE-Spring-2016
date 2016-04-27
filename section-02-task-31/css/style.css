@@ -1,0 +1,22 @@
+#form {
+  width: 600px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: stretch;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 10px; }
+  #form .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px; }
+    #form .row label {
+      flex: 1; }
+    #form .row select {
+      flex: 2; }
+    #form .row input {
+      flex: 4; }
+
+/*# sourceMappingURL=style.css.map */
